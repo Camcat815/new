@@ -1,0 +1,778 @@
+/*
+* *******************
+* Bump Order Style (Admin Side)
+* *******************
+*/
+
+#wcf-checkout-settings .wcf-checkout-style .wcf-cs-bump-options {
+    border-top: 1px #ddd solid;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+.hide{
+    display: none!important;
+}
+
+.wcf-metabox-wrap .wcf-discount-price-notice,
+.wcf-metabox-wrap .wcf-pre-checkout-offer-price-notice{
+    font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
+}
+.wcf-metabox-wrap .wcf-discount-price-notice .wcf-field-desc-content:before,
+.wcf-metabox-wrap .wcf-pre-checkout-offer-price-notice .wcf-field-desc-content:before {
+    content: '*';
+    margin-left: 2px;
+    color: #F16334;
+}
+.wcf-metabox-wrap .wcf-discount-price-note,
+.wcf-metabox-wrap .wcf-field-desc-content {
+    font-size: 14px;
+    font-style: italic;
+}
+
+/**
+* *******************
+* A/B Test (Admin Side)
+* *******************
+*/
+
+.wcf-steps-action-buttons a.wcf-start-split-test{
+    margin-left: 8px;
+}
+
+.wcf-ab-test {
+    padding: 15px;
+    background: #fff;
+    cursor: move;
+}
+
+.wcf-ab-test .wcf-ab-test-head {
+    padding: 0 0 15px;
+}
+
+.wcf-ab-test .wcf-step .dashicons-menu {
+    display: none;
+}
+
+.wcf-flow-settings .wcf-ab-test .wcf-step {
+    margin-bottom: 15px;
+    background: #f7f7f7;
+}
+
+.wcf-flow-settings .wcf-ab-test .wcf-step:last-child {
+    margin-bottom: 0;
+}
+
+/* Ab test head */
+.wcf-ab-test-head .wcf-start-ab-test {
+    color: green;
+}
+
+.wcf-ab-test-head .wcf-stop-ab-test {
+    color: red;
+}
+
+/**
+* *******************
+* Analytics Metabox (Admin Side)
+* *******************
+*/
+#wcf-analytics-settings .inside {
+    margin: 15px 0 10px;
+}
+.wcf-reports-button-wrap{
+    margin-top: 15px;
+}
+.wcf-reset-button-wrap{
+    margin: 15px 15px 0 0;
+}
+
+.button-wrap{
+    display: inline-flex;
+}
+
+#wcf-analytics-popup-wrap .wcf-analytics-reports-content .spinner {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+    -webkit-transform: translate(50%, -50%);
+    -ms-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+    z-index: 99999;
+}
+
+.wcf-analytics-reports-content {
+    max-width: 1200px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 3px;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 70%;
+    overflow-y: auto;
+    min-height: 450px;
+    max-height: 80%;
+}
+
+.wcf-analytics-table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    display: table;
+    box-sizing: border-box;
+}
+
+.wcf-analytics-row {
+    display: table-row;
+}
+
+.wcf-analytics-table .wcf-analytics-td{
+    padding-right: 15px;
+    vertical-align: middle; 
+}
+
+.wcf-analytics-table .wcf-analytics-td,
+.wcf-analytics-table .wcf-analytics-th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    display: table-cell;
+    box-sizing: border-box;
+}
+
+.wcf-analytics-table .wcf-analytics-td:first-child {
+    width: 350px;
+}
+
+.wcf-analytics-table .wcf-analytics-step{
+    background: #ffffff;
+}
+
+.wcf-analytics-table .wcf-analytics-step:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.wcf-analytics-table .wcf-analytics-row:hover,
+.wcf-analytics-table .wcf-ab-test-inner-row:hover {
+    background-color: #fafafa;
+}
+
+.wcf-analytics-table .wcf-analytics-th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: right;
+    background-color: #0085ba;
+    color: white;
+}
+
+.wcf-analytics-row .dashicons {
+    width: 15px;
+    height: 15px;
+    font-size: 15px;
+    line-height: 17px;
+}
+
+.wcf-analytics-table-wrap{
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.wcf-analytics-report-title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.wcf-analytics-header{
+    box-shadow: 0 0 8px rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0 15px;
+    min-height: 50px;
+}
+
+.wcf-analytics-filter-wrap{
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.wcf-analytics-filter-wrap .button:not(.btn-first){
+    margin-right: 10px;
+}
+
+.wcf-ab-test-inner-row .wcf-analytics-td {
+    position: relative;
+}
+
+.wcf-ab-test-inner-row .wcf-analytics-td:first-child:before {
+    content: url(../images/arrow.png);
+    color: #ccc;
+    font-family: dashicons;
+    font-weight: 400;
+    right: 28px;
+    margin-left: 0.5em;
+    position: absolute;
+    top: 2px;
+    vertical-align: middle;
+}
+
+.wcf-ab-test-inner-row .wcf-analytics-td:first-child {
+    padding-right: 45px;
+}
+
+/*.wcf-analytics-filter-wrap .button.active,
+.wcf-analytics-filter-wrap .button.active:hover{
+    background-color: #4CAF50;
+    color: #FFFFFF; 
+    border-color: #4CAF50;
+    box-shadow: none;
+}*/
+
+.wcf-analytics-summary{
+    padding: 35px 20px 20px 20px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.wcf-gross-label,
+.wcf-order-value-label,
+.wcf-bump-offer-label{
+    font-size: 20px;
+}
+
+.wcf-order-value-wrap,
+.wcf-gross-wrap,
+.wcf-bump-offer-wrap{
+    flex: 1;
+}
+
+.wcf-gross-sale,
+.wcf-order-value,
+.wcf-bump-offer-sale{
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.wcf-word-wrap{
+    width: 55%;
+    display: inline-flex;
+}
+
+.wcf-import-step-content{
+    display: table;
+}
+
+.wcf-import-step-message,
+.wcf-import-step-button{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.wcf-import-step-message p{
+    margin:0px;
+    padding: 0px;
+    text-align: justify; 
+    padding-left: 15px;
+}
+
+
+.wcf-field-item-bar,
+.wcf-product-field-item-bar {
+    clear: both;
+    cursor: move;
+    line-height: 1.5em;
+    position: relative;
+    /*margin: 9px 0 0;*/
+}
+
+.wcf-field-item-bar .wcf-field-item-handle,
+.wcf-product-field-item-bar .wcf-product-field-item-handle{
+    border: 1px solid #ececec;
+    background: #fff;
+    position: relative;
+    padding: 10px 15px;
+    height: auto;
+    min-height: 20px;
+    width: auto/*250px*/;
+    line-height: initial;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+.wcf-field-item-bar .wcf-field-item-handle label,
+.wcf-product-field-item-bar .wcf-product-field-item-handle label{
+    margin-left: 9px;
+}
+
+.wcf-field-item-bar.disable{
+    opacity: 0.5;
+    border: 1px dashed #999
+}
+
+.wcf-field-item-handle .item-title {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 20px;
+    display: inline-block;
+    margin-left: 13em;
+}
+
+.wcf-field-item-handle .item-title .wcf-field-item-title i{
+    color: red;
+}
+
+.item-controls {
+    display: inline-flex;
+    font-size: 12px;
+    float: left;
+    position: relative;
+    left: 0px;
+    /*top: -1px;*/
+}
+#wcf-billing-field-sortable,
+#wcf-shipping-field-sortable{
+    margin:0px;
+}
+
+
+#wcf-billing-field-sortable li,
+#wcf-shipping-field-sortable li{
+    margin-bottom: 10px;
+}
+
+#wcf-billing-field-sortable li .wcf-field-row input[type="text"],
+#wcf-shipping-field-sortable li .wcf-field-row input[type="text"],
+#wcf-billing-field-sortable li .wcf-field-row select,
+#wcf-shipping-field-sortable li .wcf-field-row select{
+    width: 100%;
+    margin-left: 10px;
+    background-color: #fff;
+}
+.wcf-pro-custom-field-remove .dashicons {
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    max-height: 16px;
+    margin: -4px 0 0 4px;
+}
+.wcf-field-item-settings {
+    display: none;
+    width: auto/*265px*/;
+    padding: 10px 10px 10px 10px;
+    position: relative;
+    z-index: 10;
+    border: 1px solid #ececec;
+    border-top: none;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+}
+
+.wcf-field-item-settings .wcf-field-item-label{
+    padding:5px 0;
+}
+
+/*.wcf-cb-fields{
+    margin-left: 15px;
+}*/
+
+.wcf-field-item-edit-active .wcf-field-item-settings{
+    display: block;
+    background: rgb(236, 236, 236, 0.2);/*#f1f3f5*/
+}
+.wcf-field-item-edit-active .wcf-field-item-settings-checkbox{
+    display: none;
+}
+.wcf-field-item-edit-active .wcf-field-item-settings-row-delete-cf{
+    text-align: left;
+}
+.wcf-field-item-edit-active .wcf-field-item-settings .wcf-field-row{
+    overflow: visible;
+    padding:10px 0;
+}
+
+.wcf-field-item-handle .item-title{
+    margin: 0;
+}
+
+.item-edit{
+    /*position: absolute;
+    right: -20px;
+    top: 0;
+    display: block;
+    width: 30px;
+    height: 40px;*/
+    outline: none;
+}
+
+.item-edit:before{
+    /*margin-top: 10px;*/
+    margin-right: 4px;
+    width: 20px;
+    border-radius: 50%;
+    text-indent: -1px;
+    content: "\f140";
+    font: normal 20px/1 dashicons;
+    speak: none;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none !important;
+}
+
+.wcf-field-item-edit-active .item-edit:before{
+    content: "\f142";
+}
+
+.wcf-filters {
+    display: flex;
+}
+
+.wcf-filters .wcf-filter-col {
+    flex: 1;
+}
+.wcf-filters .wcf-filter-col .button.updating-message:before{
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.text-left {
+    text-align: right;
+}
+
+.text-right {
+    text-align: left;
+}
+
+.wcf-custom-filter-input {
+    background: white !important;
+    height: 26px;
+    width: 20%;
+    text-align: center;
+}
+
+.wcf-no-data-found {
+    text-align: center;
+    margin: 5%;
+}
+
+.wcf_steps_option{
+    background-color: #eee;
+}
+
+/**
+************************************************
+*  Step badges for conditional Upsell & Downsell
+************************************************
+*/
+
+.wcf-flow-steps-meta-box .wcf-step-wrap .wcf-step .wcf-flow-badge.wcf-yes-next-badge{
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.wcf-flow-steps-meta-box .wcf-step-wrap .wcf-step .wcf-flow-badge.wcf-no-next-badge{
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.wcf-flow-settings .wcf-step-left-content {
+    width: 64%;
+}
+.wcf-flow-settings .wcf-steps-action-buttons {
+    width: 35%;
+}
+.wcf-flow-steps-meta-box .wcf-step-wrap .wcf-step .wcf-badges {
+    display: inline-block;
+}
+.wcf-flow-steps-meta-box .wcf-step-wrap .wcf-step .wcf-badges .wcf-conditional-badge {
+    display: inline-block;
+    max-width: 180px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    padding: 0.55em 0.6em;
+}
+
+.wcf-table-container .wcf-column-right .wcf-custom-field-box .wcf-cpf-add-row{
+    padding: 10px 8px 10px !important;
+}
+
+@media screen and (min-width:851px) and (max-width:1389px){
+    .wcf-cb-fields {width:100%;}
+    .wcf-sb-fields{ width:100%; }
+}
+
+.wcf-table-container .wcf-column-right .wcf-field-child-row .wcf-field-row-content:before{
+    content: url('../images/arrow.png');
+    color: #ccc;
+    font-family: dashicons;
+    font-weight: 400;
+    right: 7px;
+    margin-left: 0.5em;
+    position: absolute;
+    top: 2px;
+    vertical-align: middle;
+}
+.wcf-table-container .wcf-column-right .wcf-field-child-row {
+    position: relative;
+    margin: 0px 20px 0px 0px;
+}
+.wcf-field-child-row .wcf-field-row.field-wcf-optimize-coupon-field {
+    padding:5px 27px 12px 0px;
+}
+
+.wcf-field-child-row .wcf-field-row.field-wcf-optimize-order-note-field {
+    padding:5px 27px 12px 0px;
+}
+
+.form-row select {
+  width: 100%; }
+
+.wcf-cb-fields ul li .wcf-field-row,
+.wcf-sb-fields ul li .wcf-field-row{
+    display:flex;
+}
+
+/**
+************************************************
+*  Product Option CSS
+************************************************
+*/
+.wcf-product-options .field-wcf-product-variation-options .wcf-field-row-content{
+    padding: 0 20px;
+}
+
+.wcf-product-options .field-wcf-product-variation-options .wcf-field-row-content .wcf-radio-option {
+    position:relative;
+}
+
+.wcf-product-options .field-wcf-product-variation-options .wcf-field-row-content .wcf-radio-option:before {
+    content: url(../images/arrow.png);
+    color: #ccc;
+    font-family: dashicons;
+    font-weight: 400;
+    right: -15px;
+    margin-left: 0.5em;
+    position: absolute;
+    top: -2px;
+    vertical-align: middle;
+}
+
+.wcf-product-options .wcf-pv-fields .product-options-fields{
+    margin: 0px;
+}
+
+.wcf-product-options .wcf-pv-fields .product-options-fields li{
+    margin-bottom: 10px;
+}
+.wcf-product-options .wcf-pv-fields .product-options-fields li .item-edit:before{
+    margin-right: 0px;
+}
+
+.wcf-product-options .wcf-pv-fields .product-options-fields li:last-child{
+    margin-bottom: 0px; 
+}
+
+.wcf-product-option-fields .wcf-product-field-item-settings{
+    background:rgb(236, 236, 236, 0.2);
+    border: 1px solid #ececec;
+    border-top: none;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+}
+.wcf-product-option-fields .wcf-product-field-item-handle{
+  cursor:pointer;
+}
+
+/***********************************************************************************/
+/* Ab test setting */
+/***********************************************************************************/
+/* Ab test settings */
+.wcf-ab-test-settings-overlay {
+    position: fixed;
+    text-align: right;
+    background: rgba(0, 0, 0, 0.58);
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+
+.wcf-ab-test-popup-content {
+    width: 510px;
+    background: #ffffff;
+    border-radius: 3px;
+    right: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(50%, -50%);
+}
+
+.wcf-ab-test-settings-overlay .wcf-popup-title-wrap {
+    font-size: 14px;
+    font-weight: 600;
+    padding-right: 8px;
+}
+    
+.wcf-content-wrap {
+    padding: 25px;
+    background: #f5f5f5;
+}
+
+.wcf-ab-settings-header .wcf-cartflows-title{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.wcf-ab-settings-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    box-shadow: 0 0 8px rgba(0,0,0,.2);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.wcf-ab-settings-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 15px 15px;
+    background: #f5f5f5;
+}
+
+/* Action Buttons */
+.wcf-ab-test-save.button-primary.updating-message:before {
+    color: #fff;
+    margin: 7px -4px 0px 5px;
+    font-size: 18px;
+}
+
+.wcf-popup-actions-wrap .button.wcf-ab-test-cancel{
+    display: none;
+}
+
+.wcf-popup-actions-wrap .button.wcf-ab-test-save{
+    padding: 3px 25px;
+}
+/* Action Buttons */
+
+/* Fields */
+.wcf-traffic-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.wcf-traffic-field .wcf-step-name {
+    width: 160px;
+    margin-left: 15px;
+    line-height: 1.8;
+}
+
+.wcf-traffic-field .wcf-traffic-slider-wrap {
+    display: flex;
+    align-items: center;
+    width:300px;
+}
+
+.wcf-traffic-field .wcf-traffic-range {
+    width: 190px;
+}
+
+.wcf-traffic-field .wcf-traffic-range input {
+    width: 150px;
+}
+
+.wcf-traffic-field .wcf-traffic-value {
+    width: 90px;
+
+}
+.wcf-traffic-value input {
+    width: 65px;
+}
+.wcf-traffic-value input:after {
+    position: absolute;
+    content: "%";
+    font-size: 10px;
+    color: #b6c3cf;
+    right: 43px;
+    top: 10px;
+}
+
+#wcf-archived-button{
+    cursor: pointer;
+    color: #1e8cbe;
+}
+
+.wcf-archived-wrapper {
+    padding: 15px;
+}
+.wcf-ab-test .wcf-archived-wrapper {
+    padding: 0;
+}
+
+.wcf-archived-steps{
+    margin-top: 10px;
+}
+
+.wcf-archived-steps .wcf-archived-step{
+    background: #f7f7f7;
+    margin-bottom: 15px;
+}
+
+.wcf-archived-steps .wcf-archived-step:last-child {
+    margin: 0;
+}
+
+.wcf-flow-settings .wcf-archived-step .wcf-step{
+    padding: 0px 10px;
+    background: #f7f7f7;
+}
+
+.wcf-archived-date{
+    font-size: 10px;
+}
+
+.wcf-archived-steps .wcf-steps-action-buttons a {
+    margin-right: 15px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.wcf-archived-steps .wcf-steps-action-buttons .wcf-step-act-btn-text {
+    margin-right: 4px;
+}
+
+/* Analytics Popup CSS for A/B testing */
+.wcf-analytics-table .wcf-analytics-row.wcf-ab-test-row{
+    cursor: pointer;
+}
+.wcf-analytics-row .wcf-analytics-td span.dashicons-arrow-right-alt2:before{
+    content: "\f139";
+    font-size: 1.1em;
+}
+.wcf-analytics-row .wcf-analytics-td span.dashicons-arrow-down-alt2:before{
+    content: "\f140";
+    font-size: 1.1em;
+}
+.wcf-analytics-td span.wcf-archived-date{
+    display: block;
+    text-align: right;
+    color: #8a8a8a;
+}
+/* Analytics Popup CSS for A/B testing */
+
+/***********************************************************************************/
+/* Ab test setting */
+/**********************************************************************************/

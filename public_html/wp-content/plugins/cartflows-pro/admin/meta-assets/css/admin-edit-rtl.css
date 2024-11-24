@@ -1,0 +1,6 @@
+/* Optin Step Style */
+.wcf-optin-custom-fields .wcf-cpf-add_to,
+.wcf-optin-custom-fields .wcf-cpf-optimized,
+.wcf-optin-custom-fields .wcf-field-item-settings-optimized {
+    display: none !important;
+}
